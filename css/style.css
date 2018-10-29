@@ -3,7 +3,7 @@
 /* Base
 ------------------------------------------------------------*/
 html {
-  font-size: 170%; }
+  font-size: 100%; }
   
 body {
   color: #4c4c4c;
@@ -11,9 +11,23 @@ body {
   font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   line-height: 1.6;
   letter-spacing: 0.1em;
-  background-color: #fdfcf6; }
+  background-color: #EEEEEE; }
   
-a {
+  .top {
+    background-image: url("../images/photo-top.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  @media (max-width: 769px) {
+    .top{
+      height: 250px;
+    }
+  }
+  
+#a {
   color: #14c0c9;
   text-decoration: none; }
   a:visited {
@@ -34,12 +48,13 @@ a {
     -webkit-border-radius: 4px;
        -moz-border-radius: 4px;
             border-radius: 4px;
-    background-color: #14c0c9;}
+    background-color: #9A9A9A;}
 
 /* Align
 ------------------------------------------------------------*/
 .text-center {
-  text-align: center; }
+  text-align: center;
+  color: #fff;}
   
 /* Layout
 ------------------------------------------------------------*/
@@ -58,7 +73,7 @@ section {
     font-size: 3.2rem; }
 
 #skills {
-  background-color: #bea300; }
+  background-color: #FFFFFF; }
   #skills .container {
     display: -webkit-flex;
     display: flex;
@@ -66,14 +81,14 @@ section {
     -webkit-flex-direction: column;
     flex-direction: column; }
   #skills h2 {
-    color: #fdfcf6;
+    color: #9A9A9A;
     margin-bottom: 60px; }
   #skills .skill-box {
     -webkit-flex: 1;
     flex: 1;
     margin: 10px 0;
-    padding: 20px;
-    background-color: #fdfcf6;
+    padding: 0px;
+    background-color: #9A9A9A;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -85,7 +100,7 @@ section {
     height: 80px;
     margin-bottom: 5px;
     padding-top: 15px;
-    background-color: #14c0c9;
+    background-color: #9A9A9A;
     font-size: 4.5rem;
     color: #FFF;
     text-align: center;
@@ -95,15 +110,16 @@ section {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%; }
-  #skills h3 {
-    color: #14c0c9;
+   #skills h4 {
+    background-color: #d3dcdc;
+    color: #8e8a8a;
     margin-bottom: 10px;
-    font-size: 2.4rem;
-    font-weight: bold; }
-    
-@media (min-width: 768px) {
+    font-weight: bold;
+   }
+  @media (min-width: 769px) {
   /* Base
   ------------------------------------------------------------*/
+  
   a:hover {
     text-decoration: underline; }
 
@@ -121,3 +137,12 @@ section {
     margin: 0 10px; }
     
    }
+   
+   
+   .text-footer {
+  text-align: center;
+  color: #777373;
+     
+   }
+  
+  
